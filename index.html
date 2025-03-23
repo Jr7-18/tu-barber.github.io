@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Barber</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background-color: rgb(27, 87, 54);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Estilos de navegación */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos de secciones */
+        section {
+            padding: 20px;
+        }
+
+        #servicios {
+            background-color: beige;
+        }
+
+        h4 {
+            color: rgba(63, 59, 20, 0.637);
+        }
+
+        h3 {
+            color: rgb(114, 35, 15);
+        }
+
+        /* Estilos del formulario */
+        input, textarea, button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        button {
+            background-color: rgb(27, 87, 54);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        /* Video */
+        video {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Selector de color */
+        #colorFondo {
+            margin-top: 20px;
+        }
+
+        /* Estilos de la tabla */
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(27, 87, 54);
+            color: white;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: rgb(27, 87, 54);
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="BARBERO.png" alt="Logo de Tu Barber">
+    <h1>Tu BARBER</h1>
+    <nav> 
+        <ul>
+            <li><a href="#servicios">Cortes de cabello</a></li>
+            <li><a href="#contacto">Agenda tu cita</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="servicios">
+        <h1>Servicios de barbería</h1>
+        <h4>Todo tipo de cejas</h4>
+        <h4>Corte con cualquier tipo de tinte</h4>
+        <h4>Corte con negrumina</h4>
+        <h4>Barbas</h4>
+        <h4>Corte y barbas</h4>
+        <h4>Cerquillo</h4>
+
+        <h3>Días de atención:</h3>
+        <h2>Lunes a viernes 8AM a 5PM</h2>
+
+        <video controls autoplay loop muted width="640" height="360">
+            <source src="barbero.mp4" type="video/mp4"> 
+            Tu barber su mejor opción
+        </video>
+
+        <!-- Tabla de precios -->
+        <h2>Lista de precios</h2>
+        <table>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Corte sin tinte</td>
+                <td>$18,000</td>
+            </tr>
+            <tr>
+                <td>Corte con tinte</td>
+                <td>$25,000</td>
+            </tr>
+            <tr>
+                <td>Corte + Barba</td>
+                <td>$30,000</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contacto">
+        <h1>Agenda tu cita</h1>
+        <form action="https://formspree.io/f/tu_codigo_aqui" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="time" name="hora" required>
+            <textarea name="mensaje" placeholder="¿Qué corte te deseas hacer?" required></textarea>
+            <input type="hidden" name="_replyto" value="yerririvas8@gmail.com">
+            <button type="submit">Enviar</button>
+        </form>
+  
+
+<footer>
+    <p>&copy; 2025 CyberTics Quibdó S.A. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    function cambiarColor() {
+        let color = document.getElementById("colorFondo").value;
+        document.body.style.backgroundColor = color;
+    }
+</script>
+
+</body>
+</html>
+
+
+
