@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Barber</title>
     <style>
-        /* Estilos generales */
         body {
             background-color: lightgray;
             font-family: Arial, sans-serif;
@@ -14,12 +13,10 @@
             text-align: center;
         }
 
-        /* Estilos del encabezado */
         header {
             background-color: rgb(27, 87, 54);
             padding: 20px;
             color: white;
-            text-align: center;
         }
 
         header img {
@@ -33,7 +30,6 @@
             margin: 0;
         }
 
-        /* Estilos de navegación */
         nav ul {
             list-style: none;
             padding: 0;
@@ -50,7 +46,6 @@
             font-weight: bold;
         }
 
-        /* Estilos de secciones */
         section {
             padding: 20px;
         }
@@ -59,45 +54,19 @@
             background-color: beige;
         }
 
-        h4 {
-            color: rgba(63, 59, 20, 0.637);
-        }
-
         h3 {
             color: rgb(114, 35, 15);
         }
 
-        /* Estilos del formulario */
-        input, textarea, button {
-            display: block;
-            width: 80%;
-            margin: 10px auto;
-            padding: 10px;
+        h4 {
+            color: rgba(63, 59, 20, 0.637);
         }
 
-        button {
-            background-color: rgb(27, 87, 54);
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: darkgreen;
-        }
-
-        /* Video */
         video {
             display: block;
             margin: 0 auto;
         }
 
-        /* Selector de color */
-        #colorFondo {
-            margin-top: 20px;
-        }
-
-        /* Estilos de la tabla */
         table {
             width: 60%;
             margin: 20px auto;
@@ -115,7 +84,6 @@
             color: white;
         }
 
-        /* Pie de página */
         footer {
             background-color: rgb(27, 87, 54);
             color: white;
@@ -157,7 +125,6 @@
             Tu barber su mejor opción
         </video>
 
-        <!-- Tabla de precios -->
         <h2>Lista de precios</h2>
         <table>
             <tr>
@@ -181,14 +148,11 @@
 
     <section id="contacto">
         <h1>Agenda tu cita</h1>
-        <form action="https://formspree.io/f/tu_codigo_aqui" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="time" name="hora" required>
-            <textarea name="mensaje" placeholder="¿Qué corte te deseas hacer?" required></textarea>
-            <input type="hidden" name="_replyto" value="yerririvas8@gmail.com">
-            <button type="submit">Enviar</button>
-        </form>
-  
+        <a href="https://wa.me/573215534624" target="_blank">
+            <button>Agenda tu cita por WhatsApp</button>
+        </a>
+    </section>
+</main>
 
 <footer>
     <p>&copy; 2025 CyberTics Quibdó S.A. Todos los derechos reservados.</p>
